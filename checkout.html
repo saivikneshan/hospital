@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/checkout.css">
+    <title>Pharmacy</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+<section>
+    <nav class="navbar">
+        <div class="container-nav">
+            <a class="navbar-brand" href="Home.html">
+                <img src="Images/Logo.jpg" alt="logo" class="logo">
+            </a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="Home.html">Home</a></li>
+                <li class="nav-item"><a href="about_us_and_contact_us.html">About Us and Contact</a></li>
+                <li class="nav-item"><a href="services.html">Services</a></li>
+                <li class="nav-item"><a href="doctors.html">Doctors</a></li>
+                <li class="nav-item"><a href="consulting_and_reservation.html">Consulting and Reservation</a></li>
+                <li class="nav-item"><a href="pharmacy.html">Pharmacy</a></li>
+                <li class="nav-item"><a href="feedback.html">Feedback</a></li>
+                <li class="nav-item"><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+    </nav>
+</section>
+<h1>Checkout</h1>
+<!-- Cart Table -->
+<table>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody id="cartTableBody">
+        <!-- Cart items will be added here dynamically -->
+    </tbody>
+</table>
+<p class="total" id="totalPrice">Total: $0.00</p>
+
+<form id="checkoutForm">
+    <h3>Billing Information</h3>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+    </div>
+    <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required>
+    </div>
+    <div>
+        <label for="address">Address:</label>
+        <textarea id="address" required></textarea>
+    </div>
+    <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+    </div>
+    <div>
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" required>
+            <option value="" disabled selected>Select a payment method</option>
+            <option value="card">Card Payment</option>
+            <option value="cash">Cash on Delivery</option>
+        </select>
+    </div>
+    <div id="cardDetails" style="display: none;">
+        <h4>Card Details</h4>
+        <div>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" minlength="16" maxlength="16" aria-label="Card number">
+        </div>
+        <div>
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="month" id="expiryDate" aria-label="Card expiry date">
+        </div>
+        <div>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" minlength="3" maxlength="3" aria-label="Card CVV">
+        </div>
+    </div>
+    <button type="submit" id="submitOrder">Submit Order</button>
+</form>
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>Medical</h3>
+            <p>No. 388 Union Pl, Colombo 00200</p>
+        </div>
+        <div class="footer-center">
+            <h3>Contact Us</h3>
+            <p>Phone: (075) 4567890</p>
+            <p>Phone: (076) 7654321</p>
+            <p>Email: medical@gmail.com</p>
+        </div>
+        <div class="footer-right">
+            <h3>Stay Connected</h3>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="Webp/Instagram.webp" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="Webp/fb.webp" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="Webp/twitter.webp" alt="Twitter">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="javascript/checkout.js" defer></script>
+<script src="javascript/pharamacy.js" defer></script>
+</body>
+
+</html>

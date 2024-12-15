@@ -1,0 +1,126 @@
+#favtable {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#favrtab thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#favrtab th, #favrtab td {
+    padding: 8px 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#favrtab tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#favrtab tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#favrtab tbody td button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#favrtab tbody td button:hover {
+    background-color: #d32f2f;
+}
+
+#favtable {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#buyNowBtn{
+    margin-left: 15%;
+    margin-top: 10px;
+    padding: 6px 10px;
+    font-size: 1rem;
+    width: 70%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+#cartTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#cartTable thead {
+    background-color: #007BFF;
+    color: white;
+    text-transform: uppercase;
+}
+
+#cartTable th, #cartTable td {
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+#cartTable th {
+    font-weight: bold;
+}
+
+#cartTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#cartTable tbody tr:hover {
+    background-color: #eef9ff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#cartTable td {
+    vertical-align: middle;
+}
+
+#cartTable button {
+    background-color: #FF5722; /* Orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+#cartTable button:hover {
+    background-color: #E64A19; /* Darker orange */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+#cartTable tbody tr:hover button {
+    background-color: #D84315; /* Even darker orange when hovering over the row */
+}

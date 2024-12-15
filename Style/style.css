@@ -1,0 +1,1125 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E6F7FF;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Basic styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    background-color: #83bcfc;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.social-icons img {
+    width: 5%;
+    margin-right: 10px;
+}
+
+.contact-info p{
+    font-size: 25px;
+    color: #fff;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #3c92de; 
+    padding: 10px 20px;
+    
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5%;
+}
+
+.navbar-brand .logo {
+    height: 150px; 
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #ECF0F1; 
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item a:hover {
+    background-color: #2980B9; /* Blue hover background color */
+    color: white; /* White text on hover */
+    border-radius: 5px;
+}
+
+
+/* home page */
+.image-section {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.image-section img {
+    width: 100%;
+    height: 120vh;
+    border-radius: 10px;
+}
+
+.overlay-heading {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+h3{
+    color: #FF8C00;
+}
+.special-overlay-heading {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 4rem;
+    transform: translate(-50%, -50%);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.overlay-heading h2 {
+    font-size: 5em;
+    margin: 0;
+}
+
+.text-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.text-section p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+ 
+
+
+
+
+/* Content Section */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Text Content (Bullet/Numbered List) */
+.text-content {
+    flex: 1;
+    padding: 90px;
+    top: 30px;
+}
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    flex: 1;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+/* Reverse Flex Order */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color:#002B5C;
+    padding: 5px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-container div {
+    width: 30%;
+}
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+    margin-bottom: 5px;
+    color: #fff; 
+}
+
+.footer-left p, .footer-center p, .footer-right p {
+    margin-bottom: 5px;
+    line-height: 1.3;
+    color: #fff; 
+}
+
+.footer-right img {
+    width: 35px; 
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer-right a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+/* aboutus_page */
+.about-us {
+    position: relative;
+    background-image: url('/Webp/our-staff.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3%;
+}
+/* Style for the Welcome Banner */
+.welcome-banner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    max-height: 700px; 
+    object-fit: cover;
+}
+
+/* Style for the Welcome Paragraph */
+.welcome-paragraph {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.image-paragraph-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.text {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.map-section {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.location-address {
+    margin-left: 35%;
+    text-align: center;
+}
+
+/* Table Section */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 2px solid #000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+tfoot td {
+    text-align: center;
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+.submit{
+    align-items: center;
+    justify-content: center;
+}
+.rest{
+    align-items: center;
+    justify-content: center;
+}
+
+.keep_in_touch{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Keep in Touch Section */
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    border: #000;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="reset"] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="reset"]:hover {
+    background-color: rgb(154, 4, 4);
+}
+
+
+
+/* Consulting and Reservation Section */
+.consulting-reservation {
+    position: relative;
+    background-image: url('/Webp/consulting\ and\ reservation\ 2.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 3em; 
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/* Reservation Section */
+.reservation-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Labels */
+.reservation-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Form Inputs and Select */
+.reservation-section input[type="text"],
+.reservation-section input[type="email"],
+.reservation-section input[type="tel"],
+.reservation-section input[type="date"],
+.reservation-section input[type="time"],
+.reservation-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Dropdown Menu */
+.reservation-section select {
+    appearance: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.reservation-section button[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-section button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* services */
+.services {
+    position: relative;
+    background-image: url('/Webp/services\ 2.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.services-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-item {
+    text-align: center;
+    max-width: 200px; 
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.service-item img:hover {
+    transform: scale(1.05);
+}
+
+.service-item p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+
+
+
+
+/* doctors */
+.doctors {
+    position: relative;
+    background-image: url('/Webp/doctors.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.doctors-section {
+    padding: 40px;
+}
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container {
+    position: relative;
+    width: 350px;
+    height: 430px;
+    text-align: center;
+    perspective: 1000px;
+}
+
+.front-face, .back-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ebf8f9;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s linear;
+}
+
+.cover {
+    background: linear-gradient(75deg, #8e44ad, #2980b9);
+    height: 115px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.profile {
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    padding: 5px;
+    background: white;
+    margin-top: 40px;
+}
+
+.name {
+    font-size: 24px;
+    padding-top: 75px;
+}
+
+.tag {
+    padding: 5px 0;
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+.about {
+    margin-top: 10px;
+    padding: 0px 35px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+h1 {
+    color: #0d0d0d;
+}
+
+p {
+    padding: 20px;
+    color: #262626;
+    text-align: justify;
+}
+
+.back-face {
+    transform: rotateY(-180deg);
+}
+
+.front-face {
+    transform: rotateY(0deg);
+}
+
+.container:hover .back-face {
+    transform: rotateY(0deg);
+}
+
+.container:hover .front-face {
+    transform: rotateY(180deg);
+}
+
+
+/* pharmacy */
+ .pharmacy {
+    position: relative;
+    background-image: url('/Webp/Pharmacy.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.pharmacy-form-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+}
+
+
+/* .form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+ */
+select {
+    padding-left: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+} 
+.pharmacy-sections {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.pharmacy-category {
+    margin-bottom: 40px;
+}
+
+.pharmacy-category h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reset-btn {
+    margin-top: 10px;
+    padding: 6px 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 70%;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-align: center;
+}
+
+.reset-btn:hover {
+    background-color: #c82333;
+}
+.favorites-btn {
+    margin-left: 15%;
+    margin-top: 10px;
+    padding: 6px 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 70%;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.favorites-btn:hover {
+    background-color: darkorange;
+}
+
+.favorites-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+
+.medicine-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.medicine-item {
+    width: calc(33.333% - 20px);
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.medicine-item img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.medicine-item p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.medicine-item label,
+.medicine-item input[type="number"] {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.medicine-item input[type="number"] {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.medicine-item .price {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+
+.add-to-cart {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+select.quantity {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+/* Style for Cart Table */
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+#cart-table thead {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+#cart-table th,
+#cart-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#cart-table th {
+    font-weight: bold;
+}
+
+#cart-table td {
+    text-align: center;
+}
+
+#cart-table td button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#cart-table td button:hover {
+    background-color: #d32f2f;
+}
+
+#cart-table tfoot {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+#cart-table tfoot td {
+    text-align: right;
+}
+
+#cart-table tfoot #total-price {
+    color: #2e7d32;
+}
+.cart-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-button:hover {
+    background-color: #45a049;
+}
+
+.cart-button:active {
+    background-color: #388e3c;
+}
+
+#buy-now {
+    background-color: #008CBA;
+}
+
+#buy-now:hover {
+    background-color: #007bb5;
+}
+
+#reset-cart {
+    background-color: #f44336;
+}
+
+#reset-cart:hover {
+    background-color: #da190b;
+}
+
+
+
+
+
+/* patient resgistration */
+.Patient-Registration {
+    position: relative;
+    background-image: url('/Webp/patient\ registration.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.registration-form-section {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* feedback */
+
+.feedback {
+    position: relative;
+    background-image: url('/Webp/Feedback.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.feedback-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.feedback-content {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.feedback-text {
+    width: 50%;
+    padding-right: 20px; 
+}
+
+.feedback-image {
+    width: 50%;
+    text-align: right;
+}
+
+.feedback-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .text h2 {
+        font-size: 1.8em;
+    }
+
+    .text p {
+        font-size: 1.1em;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-right a {
+        margin-right: 0;
+    }
+}
