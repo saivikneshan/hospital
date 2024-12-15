@@ -216,7 +216,7 @@ function movefavtocheckout(){
 
         // Redirect to the checkout page
         alert("Favorite items moved to the checkout page.");
-        window.location.href = '/checkout.html';
+        window.location.href = '/clinic-site-js/checkout.html';
     }
 
 }
