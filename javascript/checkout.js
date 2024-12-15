@@ -139,7 +139,7 @@ function handleFormSubmission(event) {
     }
 
     alert("Order placed successfully!");
-    localStorage.clear(); // Clears the cart
+    localStorage.clear(); // To clears the cart
     window.location.href = '/thank_you.html'; // Redirects to a thank you page
 }
 
@@ -151,5 +151,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     nameField.addEventListener('input', validateName);
     phoneField.addEventListener('input', validatePhone);
-    expiryDateField.addEventListener('blur', validateExpiryDate); // Validate expiry date on blur
+    expiryDateField.addEventListener('blur', validateExpiryDate); 
 });

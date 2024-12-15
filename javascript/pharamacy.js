@@ -25,24 +25,21 @@ window.addEventListener('DOMContentLoaded', () => {
     fetchProductsAndAssign();
 });
 
-// update the total price display
+// update the total price and displays it
 function updateTotalPrice() {
     document.getElementById('totalPrice').textContent = totalPrice.toFixed(2);
 }
 
 
 function toggleButtons() {
-    // Hide the button with the ID "buyNowBtn"
     const buyNowBtn = document.getElementById("buyNowBtn");
     if (buyNowBtn) {
         buyNowBtn.style.display = "none";
     }
-
-    // Enable and show the button with the ID "favBtn" (initially hidden)
     const favBtn = document.getElementById("favBtn");
     if (favBtn) {
-        favBtn.hidden = false; // Remove the hidden attribute
-        favBtn.disabled = false; // Ensure the button is enabled
+        favBtn.hidden = false;
+        favBtn.disabled = false; 
     }
 }
 
@@ -60,12 +57,12 @@ function updateFavoritesButton() {
     favoritesBtn.disabled = cartTableBody.rows.length === 0;
 }
 
-// add selected product to the cart table
+// adds selected product to the cart table
 function addToCart(productName, price, quantityId) {
     // Gets the quantity value from the user input
     let quantity = document.getElementById(quantityId).value;
 
-    // Validate quantity
+    // Validates quantity from the user input
     if (isNaN(quantity) || quantity <= 0 || quantity % 1 !== 0) {
         alert("Please enter a valid quantity.");
         return;
@@ -76,7 +73,7 @@ function addToCart(productName, price, quantityId) {
         return;
     }
 
-    // Calculates the total price for the product
+    // To calculate the total price for the product
     let productTotalPrice = price * quantity;
 
     // to check whether the item already exists in the cart
@@ -90,7 +87,7 @@ function addToCart(productName, price, quantityId) {
         existingRow.cells[3].textContent = `$${(price * updatedQuantity).toFixed(2)}`;
         totalPrice += productTotalPrice;
     } else {
-        // Add new row
+        // Adds new row to the table
         let newRow = cartTableBody.insertRow();
         newRow.innerHTML = `
             <td>${productName}</td>
@@ -141,7 +138,7 @@ function processbuynow(){
     }));
     localStorage.setItem('cartData', JSON.stringify(cartData));
     localStorage.setItem('totalPrice', totalPrice.toFixed(2));
-    window.location.href = '/clinic-site-js/checkout.html';
+    window.location.href = '/checkout.html';
 }
 
 function resetcartbtnfunction(){
@@ -216,7 +213,7 @@ function movefavtocheckout(){
 
         // Redirect to the checkout page
         alert("Favorite items moved to the checkout page.");
-        window.location.href = '/clinic-site-js/checkout.html';
+        window.location.href = '/checkout.html';
     }
 
 }
