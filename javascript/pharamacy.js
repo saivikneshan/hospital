@@ -138,7 +138,7 @@ function processbuynow(){
     }));
     localStorage.setItem('cartData', JSON.stringify(cartData));
     localStorage.setItem('totalPrice', totalPrice.toFixed(2));
-    window.location.href = 'checkout.html';
+    window.location.href = '/hospital/checkout.html';
 }
 
 function resetcartbtnfunction(){
